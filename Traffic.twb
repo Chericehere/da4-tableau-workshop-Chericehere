@@ -1,0 +1,2242 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20204.21.0217.1203                               -->
+<workbook original-version='18.1' source-build='2020.4.2 (20204.21.0217.1203)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Traffic_Accidents' inline='true' name='federated.0q5jkyz0277w0819zkh940gohao3' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Traffic_Accidents' name='textscan.1mnd2lp01gq3ih12zymu508q9eh6'>
+            <connection class='textscan' directory='C:/Users/cheri/Documents/NSS_Data_Analytics/Projects/da4-tableau-workshop-Chericehere' filename='Traffic_Accidents.csv' password='' port='0' server='' />
+          </named-connection>
+          <named-connection caption='Davidson County YTD' name='excel-direct.0i1ws801o297qh1bxq7vl1e99yl2'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/cheri/Documents/NSS_Data_Analytics/Projects/da4-tableau-workshop-Chericehere/Davidson County YTD.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1mnd2lp01gq3ih12zymu508q9eh6' name='Traffic_Accidents.csv' table='[Traffic_Accidents#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Accident Number' ordinal='0' />
+            <column datatype='datetime' name='Date and Time' ordinal='1' />
+            <column datatype='integer' name='Number of Motor Vehicles' ordinal='2' />
+            <column datatype='integer' name='Number of Injuries' ordinal='3' />
+            <column datatype='integer' name='Number of Fatalities' ordinal='4' />
+            <column datatype='boolean' name='Property Damage' ordinal='5' />
+            <column datatype='boolean' name='Hit and Run' ordinal='6' />
+            <column datatype='integer' name='Reporting Officer' ordinal='7' />
+            <column datatype='integer' name='Collision Type Code' ordinal='8' />
+            <column datatype='string' name='Collision Type Description' ordinal='9' />
+            <column datatype='integer' name='Weather Code' ordinal='10' />
+            <column datatype='string' name='Weather Description' ordinal='11' />
+            <column datatype='integer' name='Illumination Code' ordinal='12' />
+            <column datatype='string' name='Illumination Description' ordinal='13' />
+            <column datatype='string' name='Harmful Code' ordinal='14' />
+            <column datatype='string' name='Harmful Description' ordinal='15' />
+            <column datatype='string' name='Street Address' ordinal='16' />
+            <column datatype='string' name='City' ordinal='17' />
+            <column datatype='string' name='State' ordinal='18' />
+            <column datatype='integer' name='ZIP' ordinal='19' />
+            <column datatype='integer' name='RPA' ordinal='20' />
+            <column datatype='string' name='Precinct' ordinal='21' />
+            <column datatype='real' name='Latitude' ordinal='22' />
+            <column datatype='real' name='Longitude' ordinal='23' />
+            <column datatype='string' name='Mapped Location' ordinal='24' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1mnd2lp01gq3ih12zymu508q9eh6' name='Traffic_Accidents.csv' table='[Traffic_Accidents#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Accident Number' ordinal='0' />
+            <column datatype='datetime' name='Date and Time' ordinal='1' />
+            <column datatype='integer' name='Number of Motor Vehicles' ordinal='2' />
+            <column datatype='integer' name='Number of Injuries' ordinal='3' />
+            <column datatype='integer' name='Number of Fatalities' ordinal='4' />
+            <column datatype='boolean' name='Property Damage' ordinal='5' />
+            <column datatype='boolean' name='Hit and Run' ordinal='6' />
+            <column datatype='integer' name='Reporting Officer' ordinal='7' />
+            <column datatype='integer' name='Collision Type Code' ordinal='8' />
+            <column datatype='string' name='Collision Type Description' ordinal='9' />
+            <column datatype='integer' name='Weather Code' ordinal='10' />
+            <column datatype='string' name='Weather Description' ordinal='11' />
+            <column datatype='integer' name='Illumination Code' ordinal='12' />
+            <column datatype='string' name='Illumination Description' ordinal='13' />
+            <column datatype='string' name='Harmful Code' ordinal='14' />
+            <column datatype='string' name='Harmful Description' ordinal='15' />
+            <column datatype='string' name='Street Address' ordinal='16' />
+            <column datatype='string' name='City' ordinal='17' />
+            <column datatype='string' name='State' ordinal='18' />
+            <column datatype='integer' name='ZIP' ordinal='19' />
+            <column datatype='integer' name='RPA' ordinal='20' />
+            <column datatype='string' name='Precinct' ordinal='21' />
+            <column datatype='real' name='Latitude' ordinal='22' />
+            <column datatype='real' name='Longitude' ordinal='23' />
+            <column datatype='string' name='Mapped Location' ordinal='24' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Traffic_Accidents.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Accident Number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Accident Number]</local-name>
+            <parent-name>[Traffic_Accidents.csv]</parent-name>
+            <remote-alias>Accident Number</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_Accidents.csv_1591F1200B6C4BC699778D272EC29652]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date and Time</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Date and Time]</local-name>
+            <parent-name>[Traffic_Accidents.csv]</parent-name>
+            <remote-alias>Date and Time</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_Accidents.csv_1591F1200B6C4BC699778D272EC29652]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Motor Vehicles</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Motor Vehicles]</local-name>
+            <parent-name>[Traffic_Accidents.csv]</parent-name>
+            <remote-alias>Number of Motor Vehicles</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_Accidents.csv_1591F1200B6C4BC699778D272EC29652]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Injuries</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Injuries]</local-name>
+            <parent-name>[Traffic_Accidents.csv]</parent-name>
+            <remote-alias>Number of Injuries</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_Accidents.csv_1591F1200B6C4BC699778D272EC29652]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Fatalities</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Fatalities]</local-name>
+            <parent-name>[Traffic_Accidents.csv]</parent-name>
+            <remote-alias>Number of Fatalities</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_Accidents.csv_1591F1200B6C4BC699778D272EC29652]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Property Damage</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Property Damage]</local-name>
+            <parent-name>[Traffic_Accidents.csv]</parent-name>
+            <remote-alias>Property Damage</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_Accidents.csv_1591F1200B6C4BC699778D272EC29652]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hit and Run</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Hit and Run]</local-name>
+            <parent-name>[Traffic_Accidents.csv]</parent-name>
+            <remote-alias>Hit and Run</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_Accidents.csv_1591F1200B6C4BC699778D272EC29652]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Reporting Officer</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Reporting Officer]</local-name>
+            <parent-name>[Traffic_Accidents.csv]</parent-name>
+            <remote-alias>Reporting Officer</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_Accidents.csv_1591F1200B6C4BC699778D272EC29652]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Collision Type Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Collision Type Code]</local-name>
+            <parent-name>[Traffic_Accidents.csv]</parent-name>
+            <remote-alias>Collision Type Code</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_Accidents.csv_1591F1200B6C4BC699778D272EC29652]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Collision Type Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Collision Type Description]</local-name>
+            <parent-name>[Traffic_Accidents.csv]</parent-name>
+            <remote-alias>Collision Type Description</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_Accidents.csv_1591F1200B6C4BC699778D272EC29652]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weather Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Weather Code]</local-name>
+            <parent-name>[Traffic_Accidents.csv]</parent-name>
+            <remote-alias>Weather Code</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_Accidents.csv_1591F1200B6C4BC699778D272EC29652]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weather Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Weather Description]</local-name>
+            <parent-name>[Traffic_Accidents.csv]</parent-name>
+            <remote-alias>Weather Description</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_Accidents.csv_1591F1200B6C4BC699778D272EC29652]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Illumination Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Illumination Code]</local-name>
+            <parent-name>[Traffic_Accidents.csv]</parent-name>
+            <remote-alias>Illumination Code</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_Accidents.csv_1591F1200B6C4BC699778D272EC29652]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Illumination Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Illumination Description]</local-name>
+            <parent-name>[Traffic_Accidents.csv]</parent-name>
+            <remote-alias>Illumination Description</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_Accidents.csv_1591F1200B6C4BC699778D272EC29652]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Harmful Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Harmful Code]</local-name>
+            <parent-name>[Traffic_Accidents.csv]</parent-name>
+            <remote-alias>Harmful Code</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_Accidents.csv_1591F1200B6C4BC699778D272EC29652]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Harmful Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Harmful Description]</local-name>
+            <parent-name>[Traffic_Accidents.csv]</parent-name>
+            <remote-alias>Harmful Description</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_Accidents.csv_1591F1200B6C4BC699778D272EC29652]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Street Address</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Street Address]</local-name>
+            <parent-name>[Traffic_Accidents.csv]</parent-name>
+            <remote-alias>Street Address</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_Accidents.csv_1591F1200B6C4BC699778D272EC29652]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[Traffic_Accidents.csv]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_Accidents.csv_1591F1200B6C4BC699778D272EC29652]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Traffic_Accidents.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_Accidents.csv_1591F1200B6C4BC699778D272EC29652]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ZIP</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ZIP]</local-name>
+            <parent-name>[Traffic_Accidents.csv]</parent-name>
+            <remote-alias>ZIP</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_Accidents.csv_1591F1200B6C4BC699778D272EC29652]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RPA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RPA]</local-name>
+            <parent-name>[Traffic_Accidents.csv]</parent-name>
+            <remote-alias>RPA</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_Accidents.csv_1591F1200B6C4BC699778D272EC29652]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Precinct</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Precinct]</local-name>
+            <parent-name>[Traffic_Accidents.csv]</parent-name>
+            <remote-alias>Precinct</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_Accidents.csv_1591F1200B6C4BC699778D272EC29652]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Latitude]</local-name>
+            <parent-name>[Traffic_Accidents.csv]</parent-name>
+            <remote-alias>Latitude</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_Accidents.csv_1591F1200B6C4BC699778D272EC29652]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Longitude]</local-name>
+            <parent-name>[Traffic_Accidents.csv]</parent-name>
+            <remote-alias>Longitude</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_Accidents.csv_1591F1200B6C4BC699778D272EC29652]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mapped Location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Mapped Location]</local-name>
+            <parent-name>[Traffic_Accidents.csv]</parent-name>
+            <remote-alias>Mapped Location</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_Accidents.csv_1591F1200B6C4BC699778D272EC29652]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.0q5jkyz0277w0819zkh940gohao3].[ctd:Accident Number:qk]&quot;' value='Accidents' />
+          <alias key='&quot;[federated.0q5jkyz0277w0819zkh940gohao3].[sum:Number of Injuries:qk]&quot;' value='Injuries' />
+        </aliases>
+      </column>
+      <column datatype='integer' name='[Accident Number]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[Harmful Description (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[Harmful Description]' default='&quot;Other&quot;' new-bin='true'>
+          <bin default-name='true' value='&quot;MOTOR VEHICLE IN TRANSPORT&quot;'>
+            <value>&quot;MOTOR VEHICLE IN TRANSPORT&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='string' name='[Harmful Description]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Illumination Code]' role='dimension' type='ordinal' />
+      <column aggregation='Avg' datatype='real' name='[Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column datatype='integer' name='[Number of Fatalities]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Injuries]' role='measure' type='quantitative' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='integer' name='[Weather Code]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' default-format='*00000' name='[ZIP]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Traffic_Accidents.csv' datatype='table' name='[__tableau_internal_object_id__].[Traffic_Accidents.csv_1591F1200B6C4BC699778D272EC29652]' role='measure' type='quantitative' />
+      <column-instance column='[Accident Number]' derivation='CountD' name='[ctd:Accident Number:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Number of Fatalities]' derivation='Sum' name='[sum:Number of Fatalities:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Number of Injuries]' derivation='Sum' name='[sum:Number of Injuries:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#2a5783'>
+              <bucket>&quot;[federated.0q5jkyz0277w0819zkh940gohao3].[ctd:Accident Number:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0q5jkyz0277w0819zkh940gohao3].[sum:Number of Fatalities:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0q5jkyz0277w0819zkh940gohao3].[sum:Number of Injuries:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Traffic_Accidents.csv' id='Traffic_Accidents.csv_1591F1200B6C4BC699778D272EC29652'>
+            <properties context=''>
+              <relation connection='textscan.1mnd2lp01gq3ih12zymu508q9eh6' name='Traffic_Accidents.csv' table='[Traffic_Accidents#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Accident Number' ordinal='0' />
+                  <column datatype='datetime' name='Date and Time' ordinal='1' />
+                  <column datatype='integer' name='Number of Motor Vehicles' ordinal='2' />
+                  <column datatype='integer' name='Number of Injuries' ordinal='3' />
+                  <column datatype='integer' name='Number of Fatalities' ordinal='4' />
+                  <column datatype='boolean' name='Property Damage' ordinal='5' />
+                  <column datatype='boolean' name='Hit and Run' ordinal='6' />
+                  <column datatype='integer' name='Reporting Officer' ordinal='7' />
+                  <column datatype='integer' name='Collision Type Code' ordinal='8' />
+                  <column datatype='string' name='Collision Type Description' ordinal='9' />
+                  <column datatype='integer' name='Weather Code' ordinal='10' />
+                  <column datatype='string' name='Weather Description' ordinal='11' />
+                  <column datatype='integer' name='Illumination Code' ordinal='12' />
+                  <column datatype='string' name='Illumination Description' ordinal='13' />
+                  <column datatype='string' name='Harmful Code' ordinal='14' />
+                  <column datatype='string' name='Harmful Description' ordinal='15' />
+                  <column datatype='string' name='Street Address' ordinal='16' />
+                  <column datatype='string' name='City' ordinal='17' />
+                  <column datatype='string' name='State' ordinal='18' />
+                  <column datatype='integer' name='ZIP' ordinal='19' />
+                  <column datatype='integer' name='RPA' ordinal='20' />
+                  <column datatype='string' name='Precinct' ordinal='21' />
+                  <column datatype='real' name='Latitude' ordinal='22' />
+                  <column datatype='real' name='Longitude' ordinal='23' />
+                  <column datatype='string' name='Mapped Location' ordinal='24' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Fatalities by county' inline='true' name='federated.19w91bn0hjlnse1bes3521lbtwgn' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Fatalities by county' name='pdf.19xqemh0a85f8k1aqjpwo0wpi4d3'>
+            <connection class='pdf' cleaning='no' compat='no' dataRefreshTime='' interpretationMode='257' origfilename='C:/Users/cheri/Documents/NSS_Data_Analytics/Projects/da4-tableau-workshop-Chericehere/Fatalities by county.pdf' password='' pgFrom='1' pgTo='1' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='pdf.19xqemh0a85f8k1aqjpwo0wpi4d3' name='Page    1 Table  1' table='[&apos;Page    1 Table  1$&apos;]' type='table'>
+          <columns gridOrigin='A1:G34:no:A1:G34:0' header='no' outcome='2'>
+            <column datatype='string' name='F1' ordinal='0' />
+            <column datatype='string' name='F2' ordinal='1' />
+            <column datatype='string' name='F3' ordinal='2' />
+            <column datatype='string' name='F4' ordinal='3' />
+            <column datatype='string' name='F5' ordinal='4' />
+            <column datatype='string' name='F6' ordinal='5' />
+            <column datatype='string' name='F7' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='pdf.19xqemh0a85f8k1aqjpwo0wpi4d3' name='Page    1 Table  1' table='[&apos;Page    1 Table  1$&apos;]' type='table'>
+          <columns gridOrigin='A1:G34:no:A1:G34:0' header='no' outcome='2'>
+            <column datatype='string' name='F1' ordinal='0' />
+            <column datatype='string' name='F2' ordinal='1' />
+            <column datatype='string' name='F3' ordinal='2' />
+            <column datatype='string' name='F4' ordinal='3' />
+            <column datatype='string' name='F5' ordinal='4' />
+            <column datatype='string' name='F6' ordinal='5' />
+            <column datatype='string' name='F7' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Page    1 Table  1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:G34:no:A1:G34:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>false</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Page    1 Table  1]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page    1 Table  1_4D3D5477A1994D78B87F4D41E8CF45C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F2</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[F2]</local-name>
+            <parent-name>[Page    1 Table  1]</parent-name>
+            <remote-alias>F2</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page    1 Table  1_4D3D5477A1994D78B87F4D41E8CF45C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F3</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[F3]</local-name>
+            <parent-name>[Page    1 Table  1]</parent-name>
+            <remote-alias>F3</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page    1 Table  1_4D3D5477A1994D78B87F4D41E8CF45C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F4</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[F4]</local-name>
+            <parent-name>[Page    1 Table  1]</parent-name>
+            <remote-alias>F4</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page    1 Table  1_4D3D5477A1994D78B87F4D41E8CF45C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F5</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[F5]</local-name>
+            <parent-name>[Page    1 Table  1]</parent-name>
+            <remote-alias>F5</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page    1 Table  1_4D3D5477A1994D78B87F4D41E8CF45C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F6</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[F6]</local-name>
+            <parent-name>[Page    1 Table  1]</parent-name>
+            <remote-alias>F6</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page    1 Table  1_4D3D5477A1994D78B87F4D41E8CF45C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F7</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[F7]</local-name>
+            <parent-name>[Page    1 Table  1]</parent-name>
+            <remote-alias>F7</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page    1 Table  1_4D3D5477A1994D78B87F4D41E8CF45C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' hidden='true' name='[F1]' role='dimension' type='nominal' />
+      <column caption='County' datatype='string' name='[F2]' role='dimension' type='nominal' />
+      <column caption='YTD 2020' datatype='string' name='[F3]' role='dimension' type='nominal' />
+      <column caption='YTD2021' datatype='string' name='[F4]' role='dimension' type='nominal' />
+      <column caption='DIFF' datatype='string' name='[F5]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[F6]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[F7]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Page    1 Table  1' datatype='table' name='[__tableau_internal_object_id__].[Page    1 Table  1_4D3D5477A1994D78B87F4D41E8CF45C4]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <filter class='categorical' column='[F2]' filter-group='2'>
+        <groupfilter function='member' level='[F2]' member='&quot;DAVIDSON&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Page    1 Table  1' id='Page    1 Table  1_4D3D5477A1994D78B87F4D41E8CF45C4'>
+            <properties context=''>
+              <relation connection='pdf.19xqemh0a85f8k1aqjpwo0wpi4d3' name='Page    1 Table  1' table='[&apos;Page    1 Table  1$&apos;]' type='table'>
+                <columns gridOrigin='A1:G34:no:A1:G34:0' header='no' outcome='2'>
+                  <column datatype='string' name='F1' ordinal='0' />
+                  <column datatype='string' name='F2' ordinal='1' />
+                  <column datatype='string' name='F3' ordinal='2' />
+                  <column datatype='string' name='F4' ordinal='3' />
+                  <column datatype='string' name='F5' ordinal='4' />
+                  <column datatype='string' name='F6' ordinal='5' />
+                  <column datatype='string' name='F7' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Fatalities by year' inline='true' name='federated.19sx5ix0m64tgr1aywwd618wilvi' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Fatalities by year' name='excel-direct.1fbbyz71a0w2w50zx4igp0cggv1z'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/cheri/Documents/NSS_Data_Analytics/Projects/da4-tableau-workshop-Chericehere/Fatalities by year.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='Annual Fatalities' name='textscan.171i4pb1v4dtol14cheto0lwu2hz'>
+            <connection class='textscan' directory='C:/Users/cheri/Documents/NSS_Data_Analytics/Projects/da4-tableau-workshop-Chericehere' filename='Annual Fatalities.csv' password='' port='0' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1fbbyz71a0w2w50zx4igp0cggv1z' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:B13:no:A1:B13:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='integer' name='Fatalities in Davidson County' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.1fbbyz71a0w2w50zx4igp0cggv1z' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:B13:no:A1:B13:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='integer' name='Fatalities in Davidson County' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B13:no:A1:B13:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_7FAAF56C11794C6EBAB5009F0CB1D134]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fatalities in Davidson County</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Fatalities in Davidson County]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Fatalities in Davidson County</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_7FAAF56C11794C6EBAB5009F0CB1D134]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Percent Change' datatype='real' default-format='p0.00%' name='[Calculation1]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='(ZN(SUM([Fatalities in Davidson County])) - LOOKUP(ZN(SUM([Fatalities in Davidson County])), -1)) / ABS(LOOKUP(ZN(SUM([Fatalities in Davidson County])), -1))'>
+          <table-calc ordering-field='[federated.19sx5ix0m64tgr1aywwd618wilvi].[none:Year:ok]' ordering-type='Field' />
+        </calculation>
+      </column>
+      <column datatype='integer' name='[Fatalities in Davidson County]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Fatalities by year' datatype='table' hidden='true' name='[__tableau_internal_object_id__].[Sheet1_7FAAF56C11794C6EBAB5009F0CB1D134]' role='measure' type='quantitative' />
+      <column-instance column='[Fatalities in Davidson County]' derivation='Sum' name='[diff:sum:Fatalities in Davidson County:qk:1]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-field='[federated.19sx5ix0m64tgr1aywwd618wilvi].[none:Year:ok]' ordering-type='Field' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Fatalities in Davidson County]' derivation='Sum' name='[diff:sum:Fatalities in Davidson County:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Rows' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Fatalities in Davidson County]' derivation='None' name='[none:Fatalities in Davidson County:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Fatalities in Davidson County]' derivation='Sum' name='[pcdf:sum:Fatalities in Davidson County:qk:1]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-field='[federated.19sx5ix0m64tgr1aywwd618wilvi].[none:Year:qk]' ordering-type='Field' type='PctDiff'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Fatalities in Davidson County]' derivation='Sum' name='[pcdf:sum:Fatalities in Davidson County:qk:2]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-field='' ordering-type='Field' type='PctDiff'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Fatalities in Davidson County]' derivation='Sum' name='[pcdf:sum:Fatalities in Davidson County:qk:3]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Fixed' ordering-field='[federated.19sx5ix0m64tgr1aywwd618wilvi].[Year]' ordering-type='Field' type='PctDiff'>
+          <address>
+            <value>2019</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Fatalities in Davidson County]' derivation='Sum' name='[pcdf:sum:Fatalities in Davidson County:qk:4]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-field='[federated.19sx5ix0m64tgr1aywwd618wilvi].[Year]' ordering-type='Field' type='PctDiff'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Fatalities in Davidson County]' derivation='Sum' name='[pcdf:sum:Fatalities in Davidson County:qk:5]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-field='[federated.19sx5ix0m64tgr1aywwd618wilvi].[none:Year:ok]' ordering-type='Field' type='PctDiff'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Fatalities in Davidson County]' derivation='Sum' name='[pcdf:sum:Fatalities in Davidson County:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Rows' type='PctDiff'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Fatalities in Davidson County]' derivation='Sum' name='[sum:Fatalities in Davidson County:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation1]' derivation='User' name='[usr:Calculation1:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-field='[federated.19sx5ix0m64tgr1aywwd618wilvi].[none:Year:ok]' ordering-type='Field' />
+      </column-instance>
+      <column-instance column='[Fatalities in Davidson County]' derivation='Var' name='[var:Fatalities in Davidson County:qk]' pivot='key' type='quantitative' />
+      <group hidden='true' name='[Exclusions (Fatalities in Davidson County,Year)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Fatalities in Davidson County:qk]' />
+          <groupfilter function='level-members' level='[none:Year:qk]' />
+        </groupfilter>
+      </group>
+      <group caption='Year Set' name='[Year Set]' name-style='unqualified' user:ui-builder='lasso-group'>
+        <groupfilter function='member' level='[Year]' member='2020' />
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.19sx5ix0m64tgr1aywwd618wilvi].[:Measure Names]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.19sx5ix0m64tgr1aywwd618wilvi].[diff:sum:Fatalities in Davidson County:qk:1]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.19sx5ix0m64tgr1aywwd618wilvi].[diff:sum:Fatalities in Davidson County:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.19sx5ix0m64tgr1aywwd618wilvi].[none:Calculation_984599494073491471:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.19sx5ix0m64tgr1aywwd618wilvi].[none:Fatalities in Davidson County:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.19sx5ix0m64tgr1aywwd618wilvi].[pcdf:sum:Fatalities in Davidson County:qk:1]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.19sx5ix0m64tgr1aywwd618wilvi].[pcdf:sum:Fatalities in Davidson County:qk:2]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.19sx5ix0m64tgr1aywwd618wilvi].[pcdf:sum:Fatalities in Davidson County:qk:3]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.19sx5ix0m64tgr1aywwd618wilvi].[pcdf:sum:Fatalities in Davidson County:qk:4]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.19sx5ix0m64tgr1aywwd618wilvi].[pcdf:sum:Fatalities in Davidson County:qk:5]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.19sx5ix0m64tgr1aywwd618wilvi].[pcdf:sum:Fatalities in Davidson County:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.19sx5ix0m64tgr1aywwd618wilvi].[sum:Fatalities in Davidson County:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.19sx5ix0m64tgr1aywwd618wilvi].[usr:Calculation1:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.19sx5ix0m64tgr1aywwd618wilvi].[var:Fatalities in Davidson County:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.19sx5ix0m64tgr1aywwd618wilvi]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Year:ok]' palette='blue_10_0' type='palette'>
+            <map to='#2a5783'>
+              <bucket>2020</bucket>
+            </map>
+            <map to='#3e6c99'>
+              <bucket>2019</bucket>
+            </map>
+            <map to='#5081ae'>
+              <bucket>2018</bucket>
+            </map>
+            <map to='#6798c1'>
+              <bucket>2017</bucket>
+            </map>
+            <map to='#7eaed3'>
+              <bucket>2016</bucket>
+            </map>
+            <map to='#9ac6e4'>
+              <bucket>2015</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>2014</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Fatalities by year' id='Sheet1_7FAAF56C11794C6EBAB5009F0CB1D134'>
+            <properties context=''>
+              <relation connection='excel-direct.1fbbyz71a0w2w50zx4igp0cggv1z' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:B13:no:A1:B13:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='Year' ordinal='0' />
+                  <column datatype='integer' name='Fatalities in Davidson County' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Measure Names' />
+        <param name='target' value='Dashboard' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='2020 Fatalities YTD'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontsize='14'>2020 Fatalities Year to Date</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Fatalities by county' name='federated.19w91bn0hjlnse1bes3521lbtwgn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19w91bn0hjlnse1bes3521lbtwgn'>
+            <column caption='YTD 2020' datatype='string' name='[F3]' role='dimension' type='nominal' />
+            <column-instance column='[F3]' derivation='None' name='[none:F3:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='24' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.19w91bn0hjlnse1bes3521lbtwgn].[none:F3:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{14C0BAEF-03AE-4A61-981E-689442047377}' />
+    </worksheet>
+    <worksheet name='2021 Fatalities YTD'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontsize='14'>2021 Fatalities Year to Date</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Fatalities by county' name='federated.19w91bn0hjlnse1bes3521lbtwgn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19w91bn0hjlnse1bes3521lbtwgn'>
+            <column caption='YTD2021' datatype='string' name='[F4]' role='dimension' type='nominal' />
+            <column-instance column='[F4]' derivation='None' name='[none:F4:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='24' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.19w91bn0hjlnse1bes3521lbtwgn].[none:F4:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{13513D78-4966-4B21-A643-15308D68C148}' />
+    </worksheet>
+    <worksheet name='Accidents and Injuries'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontsize='14'>Annual Traffic Accidents and Injuries</run>
+            <run fontalignment='1'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Traffic_Accidents' name='federated.0q5jkyz0277w0819zkh940gohao3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0q5jkyz0277w0819zkh940gohao3'>
+            <column datatype='integer' name='[Accident Number]' role='dimension' type='ordinal' />
+            <column datatype='datetime' name='[Date and Time]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Number of Injuries]' role='measure' type='quantitative' />
+            <column-instance column='[Accident Number]' derivation='CountD' name='[ctd:Accident Number:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Number of Injuries]' derivation='Sum' name='[sum:Number of Injuries:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date and Time]' derivation='Year-Trunc' name='[tyr:Date and Time:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.0q5jkyz0277w0819zkh940gohao3].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0q5jkyz0277w0819zkh940gohao3].[ctd:Accident Number:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0q5jkyz0277w0819zkh940gohao3].[sum:Number of Injuries:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0q5jkyz0277w0819zkh940gohao3].[sum:Number of Injuries:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+            <format attr='title' class='0' field='[federated.0q5jkyz0277w0819zkh940gohao3].[ctd:Accident Number:qk]' scope='rows' value='Number of Accidents' />
+            <format attr='title' class='0' field='[federated.0q5jkyz0277w0819zkh940gohao3].[tyr:Date and Time:qk]' scope='cols' value='' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='11' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='col-width' field='[federated.0q5jkyz0277w0819zkh940gohao3].[:Measure Names]' value='360' />
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0q5jkyz0277w0819zkh940gohao3].[:Measure Names]' value='Measure Names' />
+          </style-rule>
+          <style-rule element='axis-title'>
+            <format attr='font-weight' field='[federated.0q5jkyz0277w0819zkh940gohao3].[sum:Number of Injuries:qk]' value='normal' />
+            <format attr='color' field='[federated.0q5jkyz0277w0819zkh940gohao3].[sum:Number of Injuries:qk]' value='#1b1b1b' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0q5jkyz0277w0819zkh940gohao3].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0q5jkyz0277w0819zkh940gohao3].[ctd:Accident Number:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0q5jkyz0277w0819zkh940gohao3].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0q5jkyz0277w0819zkh940gohao3].[sum:Number of Injuries:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0q5jkyz0277w0819zkh940gohao3].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0q5jkyz0277w0819zkh940gohao3].[ctd:Accident Number:qk] + [federated.0q5jkyz0277w0819zkh940gohao3].[sum:Number of Injuries:qk])</rows>
+        <cols>[federated.0q5jkyz0277w0819zkh940gohao3].[tyr:Date and Time:qk]</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0q5jkyz0277w0819zkh940gohao3].[tyr:Date and Time:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0q5jkyz0277w0819zkh940gohao3].[ctd:Accident Number:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0q5jkyz0277w0819zkh940gohao3].[ctd:Accident Number:qk]</field>
+                  <field>[federated.0q5jkyz0277w0819zkh940gohao3].[tyr:Date and Time:qk]</field>
+                  <field>[federated.0q5jkyz0277w0819zkh940gohao3].[:Measure Names]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>27770</value>
+                <value>#2014-01-01 00:00:00#</value>
+                <value>&quot;[federated.0q5jkyz0277w0819zkh940gohao3].[ctd:Accident Number:qk]&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0q5jkyz0277w0819zkh940gohao3].[tyr:Date and Time:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0q5jkyz0277w0819zkh940gohao3].[ctd:Accident Number:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0q5jkyz0277w0819zkh940gohao3].[ctd:Accident Number:qk]</field>
+                  <field>[federated.0q5jkyz0277w0819zkh940gohao3].[tyr:Date and Time:qk]</field>
+                  <field>[federated.0q5jkyz0277w0819zkh940gohao3].[:Measure Names]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>32290</value>
+                <value>#2015-01-01 00:00:00#</value>
+                <value>&quot;[federated.0q5jkyz0277w0819zkh940gohao3].[ctd:Accident Number:qk]&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0q5jkyz0277w0819zkh940gohao3].[tyr:Date and Time:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0q5jkyz0277w0819zkh940gohao3].[ctd:Accident Number:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0q5jkyz0277w0819zkh940gohao3].[ctd:Accident Number:qk]</field>
+                  <field>[federated.0q5jkyz0277w0819zkh940gohao3].[tyr:Date and Time:qk]</field>
+                  <field>[federated.0q5jkyz0277w0819zkh940gohao3].[:Measure Names]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>34432</value>
+                <value>#2016-01-01 00:00:00#</value>
+                <value>&quot;[federated.0q5jkyz0277w0819zkh940gohao3].[ctd:Accident Number:qk]&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='3' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0q5jkyz0277w0819zkh940gohao3].[tyr:Date and Time:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0q5jkyz0277w0819zkh940gohao3].[ctd:Accident Number:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0q5jkyz0277w0819zkh940gohao3].[ctd:Accident Number:qk]</field>
+                  <field>[federated.0q5jkyz0277w0819zkh940gohao3].[tyr:Date and Time:qk]</field>
+                  <field>[federated.0q5jkyz0277w0819zkh940gohao3].[:Measure Names]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>34275</value>
+                <value>#2017-01-01 00:00:00#</value>
+                <value>&quot;[federated.0q5jkyz0277w0819zkh940gohao3].[ctd:Accident Number:qk]&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='4' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0q5jkyz0277w0819zkh940gohao3].[tyr:Date and Time:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0q5jkyz0277w0819zkh940gohao3].[ctd:Accident Number:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0q5jkyz0277w0819zkh940gohao3].[ctd:Accident Number:qk]</field>
+                  <field>[federated.0q5jkyz0277w0819zkh940gohao3].[tyr:Date and Time:qk]</field>
+                  <field>[federated.0q5jkyz0277w0819zkh940gohao3].[:Measure Names]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>34470</value>
+                <value>#2018-01-01 00:00:00#</value>
+                <value>&quot;[federated.0q5jkyz0277w0819zkh940gohao3].[ctd:Accident Number:qk]&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='5' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0q5jkyz0277w0819zkh940gohao3].[tyr:Date and Time:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0q5jkyz0277w0819zkh940gohao3].[ctd:Accident Number:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0q5jkyz0277w0819zkh940gohao3].[ctd:Accident Number:qk]</field>
+                  <field>[federated.0q5jkyz0277w0819zkh940gohao3].[tyr:Date and Time:qk]</field>
+                  <field>[federated.0q5jkyz0277w0819zkh940gohao3].[:Measure Names]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>34597</value>
+                <value>#2019-01-01 00:00:00#</value>
+                <value>&quot;[federated.0q5jkyz0277w0819zkh940gohao3].[ctd:Accident Number:qk]&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='6' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0q5jkyz0277w0819zkh940gohao3].[tyr:Date and Time:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0q5jkyz0277w0819zkh940gohao3].[ctd:Accident Number:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0q5jkyz0277w0819zkh940gohao3].[ctd:Accident Number:qk]</field>
+                  <field>[federated.0q5jkyz0277w0819zkh940gohao3].[tyr:Date and Time:qk]</field>
+                  <field>[federated.0q5jkyz0277w0819zkh940gohao3].[:Measure Names]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>21027</value>
+                <value>#2020-01-01 00:00:00#</value>
+                <value>&quot;[federated.0q5jkyz0277w0819zkh940gohao3].[ctd:Accident Number:qk]&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='7' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0q5jkyz0277w0819zkh940gohao3].[tyr:Date and Time:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0q5jkyz0277w0819zkh940gohao3].[ctd:Accident Number:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0q5jkyz0277w0819zkh940gohao3].[ctd:Accident Number:qk]</field>
+                  <field>[federated.0q5jkyz0277w0819zkh940gohao3].[tyr:Date and Time:qk]</field>
+                  <field>[federated.0q5jkyz0277w0819zkh940gohao3].[:Measure Names]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>3942</value>
+                <value>#2021-01-01 00:00:00#</value>
+                <value>&quot;[federated.0q5jkyz0277w0819zkh940gohao3].[ctd:Accident Number:qk]&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{741754FA-8889-4259-9D61-B7FD7C36CB54}' />
+    </worksheet>
+    <worksheet name='Annual Fatalities'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontsize='14'>Percent Change in Fatalities</run>
+            <run fontalignment='1'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Fatalities by year' name='federated.19sx5ix0m64tgr1aywwd618wilvi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19sx5ix0m64tgr1aywwd618wilvi'>
+            <column caption='Percent Change' datatype='real' default-format='p0.00%' name='[Calculation1]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='(ZN(SUM([Fatalities in Davidson County])) - LOOKUP(ZN(SUM([Fatalities in Davidson County])), -1)) / ABS(LOOKUP(ZN(SUM([Fatalities in Davidson County])), -1))'>
+                <table-calc ordering-field='[federated.19sx5ix0m64tgr1aywwd618wilvi].[none:Year:ok]' ordering-type='Field' />
+              </calculation>
+            </column>
+            <column datatype='integer' name='[Fatalities in Davidson County]' role='measure' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Fatalities in Davidson County]' derivation='Sum' name='[sum:Fatalities in Davidson County:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation1]' derivation='User' name='[usr:Calculation1:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.19sx5ix0m64tgr1aywwd618wilvi].[none:Year:ok]' ordering-type='Field' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.19sx5ix0m64tgr1aywwd618wilvi].[none:Year:ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Year:ok]' member='2014' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2015' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2016' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2017' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2018' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2019' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2020' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.19sx5ix0m64tgr1aywwd618wilvi].[none:Year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.19sx5ix0m64tgr1aywwd618wilvi].[sum:Fatalities in Davidson County:qk]' scope='rows' value='Fatalities' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.19sx5ix0m64tgr1aywwd618wilvi].[none:Year:ok]' value='185' />
+            <format attr='text-orientation' data-class='subtotal' scope='cols' value='0' />
+            <format attr='text-align' data-class='subtotal' scope='cols' value='left' />
+            <format attr='vertical-align' data-class='subtotal' scope='cols' value='bottom' />
+            <format attr='text-align' field='[federated.19sx5ix0m64tgr1aywwd618wilvi].[usr:Calculation1:qk]' value='center' />
+            <format attr='vertical-align' field='[federated.19sx5ix0m64tgr1aywwd618wilvi].[usr:Calculation1:qk]' value='top' />
+            <format attr='text-align' data-class='total' field='[federated.19sx5ix0m64tgr1aywwd618wilvi].[usr:Calculation1:qk]' value='right' />
+            <format attr='vertical-align' data-class='total' field='[federated.19sx5ix0m64tgr1aywwd618wilvi].[usr:Calculation1:qk]' value='center' />
+            <format attr='wrap' field='[federated.19sx5ix0m64tgr1aywwd618wilvi].[sum:Fatalities in Davidson County:qk]' value='on' />
+            <format attr='text-align' data-class='subtotal' field='[federated.19sx5ix0m64tgr1aywwd618wilvi].[usr:Calculation1:qk]' value='center' />
+            <format attr='text-orientation' field='[federated.19sx5ix0m64tgr1aywwd618wilvi].[usr:Calculation1:qk]' value='0' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='text-orientation' data-class='subtotal' scope='cols' value='-90' />
+            <format attr='vertical-align' data-class='subtotal' scope='cols' value='top' />
+            <format attr='text-align' data-class='subtotal' scope='cols' value='center' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='font-size' value='11' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.19sx5ix0m64tgr1aywwd618wilvi].[none:Year:ok]' />
+              <text column='[federated.19sx5ix0m64tgr1aywwd618wilvi].[usr:Calculation1:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.19sx5ix0m64tgr1aywwd618wilvi].[sum:Fatalities in Davidson County:qk]</rows>
+        <cols>[federated.19sx5ix0m64tgr1aywwd618wilvi].[none:Year:ok]</cols>
+      </table>
+      <simple-id uuid='{C22A432A-9F45-4F46-B67F-99F911B47E7B}' />
+    </worksheet>
+    <worksheet name='Fatalities'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Number of Fatalities&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Fatalities by year' name='federated.19sx5ix0m64tgr1aywwd618wilvi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19sx5ix0m64tgr1aywwd618wilvi'>
+            <column datatype='integer' name='[Fatalities in Davidson County]' role='measure' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Fatalities in Davidson County]' derivation='Sum' name='[sum:Fatalities in Davidson County:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.19sx5ix0m64tgr1aywwd618wilvi].[none:Year:ok]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Year:ok]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Year:ok]' member='2010' />
+                <groupfilter function='member' level='[none:Year:ok]' member='2011' />
+                <groupfilter function='member' level='[none:Year:ok]' member='2012' />
+                <groupfilter function='member' level='[none:Year:ok]' member='2013' />
+                <groupfilter function='member' level='[none:Year:ok]' member='2021' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.19sx5ix0m64tgr1aywwd618wilvi].[none:Year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='font-size' data-class='total' scope='cols' value='14' />
+            <format attr='font-weight' data-class='subtotal' value='bold' />
+            <format attr='font-weight' data-class='total' field='[federated.19sx5ix0m64tgr1aywwd618wilvi].[none:Year:qk]' value='bold' />
+            <format attr='font-weight' data-class='total' value='bold' />
+            <format attr='font-size' data-class='subtotal' value='20' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='font-size' data-class='subtotal' value='14' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.19sx5ix0m64tgr1aywwd618wilvi].[sum:Fatalities in Davidson County:qk]' palette='blue_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='12' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.19sx5ix0m64tgr1aywwd618wilvi].[sum:Fatalities in Davidson County:qk]' />
+              <size column='[federated.19sx5ix0m64tgr1aywwd618wilvi].[sum:Fatalities in Davidson County:qk]' />
+              <text column='[federated.19sx5ix0m64tgr1aywwd618wilvi].[none:Year:qk]' />
+              <text column='[federated.19sx5ix0m64tgr1aywwd618wilvi].[sum:Fatalities in Davidson County:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{AE181478-2CCA-4740-877B-5489625A0DAF}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Davidson County Traffic Accidents, Injuries, and Fatalities
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='dash-title'>
+          <format attr='font-weight' value='bold' />
+          <format attr='text-align' value='center' />
+        </style-rule>
+      </style>
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='2' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='53' param='horz' w='98400' x='800' y='1000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98000' id='37' w='98400' x='800' y='1000'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='20375' id='31' param='vert' w='98400' x='800' y='1000'>
+                <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' fixed-size='77' h='10625' id='32' is-fixed='true' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='9750' id='29' w='98400' x='800' y='11625'>
+                  <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='9750' id='26' param='horz' w='98400' x='800' y='11625'>
+                    <zone h='9750' id='47' name='2020 Fatalities YTD' w='49200' x='800' y='11625'>
+                      <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='9750' id='28' name='2021 Fatalities YTD' w='49200' x='50000' y='11625'>
+                      <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='77625' id='35' param='vert' w='98400' x='800' y='21375'>
+                <zone fixed-size='301' h='38625' id='36' is-fixed='true' name='Accidents and Injuries' w='98400' x='800' y='21375'>
+                  <layout-cache minheight='173' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' fixed-size='28' h='4500' id='54' is-fixed='true' leg-item-layout='horz' name='Accidents and Injuries' pane-specification-id='1' param='[federated.0q5jkyz0277w0819zkh940gohao3].[:Measure Names]' show-title='false' w='98400' x='800' y='60000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='34500' id='41' param='horz' w='98400' x='800' y='64500'>
+                  <zone fixed-size='469' h='34500' id='65' is-fixed='true' name='Fatalities' w='47700' x='800' y='64500'>
+                    <layout-cache type-h='cell' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='34500' id='42' name='Annual Fatalities' w='50697' x='48500' y='64500'>
+                    <layout-cache cell-count-w='7' minheight='167' non-cell-size-w='68' type-h='scalable' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run>Davidson County Traffic Accidents, Injuries, and Fatalities
+</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1150' minheight='1150' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='83' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='82' param='vert' w='98400' x='800' y='1000'>
+                <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' fixed-size='77' h='10625' id='32' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='70' h='9750' id='47' is-fixed='true' name='2020 Fatalities YTD' w='49200' x='800' y='11625'>
+                  <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='70' h='9750' id='28' is-fixed='true' name='2021 Fatalities YTD' w='49200' x='50000' y='11625'>
+                  <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38625' id='36' is-fixed='true' name='Accidents and Injuries' w='98400' x='800' y='21375'>
+                  <layout-cache minheight='173' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' fixed-size='28' h='4500' id='54' leg-item-layout='horz' name='Accidents and Injuries' pane-specification-id='1' param='[federated.0q5jkyz0277w0819zkh940gohao3].[:Measure Names]' show-title='false' w='98400' x='800' y='60000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='268' h='34500' id='65' is-fixed='true' name='Fatalities' w='47700' x='800' y='64500'>
+                  <layout-cache type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='268' h='34500' id='42' is-fixed='true' name='Annual Fatalities' w='50697' x='48500' y='64500'>
+                  <layout-cache minheight='167' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{E18658C8-99B9-478A-B1EA-4E666802F2FF}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='72'>
+    <window class='dashboard' maximized='true' name='Dashboard'>
+      <viewpoints>
+        <viewpoint name='2020 Fatalities YTD'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='2021 Fatalities YTD'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Accidents and Injuries'>
+          <zoom type='entire-view' />
+          <selection-collection>
+            <tuple-selection>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields>
+                      <field>[federated.0q5jkyz0277w0819zkh940gohao3].[tyr:Date and Time:qk]</field>
+                    </x-fields>
+                    <y-fields>
+                      <field>[federated.0q5jkyz0277w0819zkh940gohao3].[ctd:Accident Number:qk]</field>
+                    </y-fields>
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.0q5jkyz0277w0819zkh940gohao3].[ctd:Accident Number:qk]</field>
+                    <field>[federated.0q5jkyz0277w0819zkh940gohao3].[tyr:Date and Time:qk]</field>
+                    <field>[federated.0q5jkyz0277w0819zkh940gohao3].[:Measure Names]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>21027</value>
+                  <value>#2020-01-01 00:00:00#</value>
+                  <value>&quot;[federated.0q5jkyz0277w0819zkh940gohao3].[ctd:Accident Number:qk]&quot;</value>
+                </tuple>
+              </tuple-reference>
+            </tuple-selection>
+          </selection-collection>
+          <highlight field='[federated.0q5jkyz0277w0819zkh940gohao3].[:Measure Names]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Annual Fatalities'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Fatalities'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <device-preview visible='true'>
+        <device name='Large Desktop Monitor' type='Desktop' />
+      </device-preview>
+      <simple-id uuid='{85DAFEA5-7889-4F5B-8A7D-6E0BF0063A09}' />
+    </window>
+    <window class='worksheet' hidden='true' name='2020 Fatalities YTD'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.19w91bn0hjlnse1bes3521lbtwgn].[none:F3:nk]</field>
+            <field>[federated.19w91bn0hjlnse1bes3521lbtwgn].[none:F4:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4BBC0A46-9506-4009-93FD-88974A3808C2}' />
+    </window>
+    <window class='worksheet' hidden='true' name='2021 Fatalities YTD'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19w91bn0hjlnse1bes3521lbtwgn].[none:F4:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;36&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.19w91bn0hjlnse1bes3521lbtwgn].[none:F4:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{790690DC-86E1-4D19-A2AE-085BBC13CD5D}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Accidents and Injuries'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0q5jkyz0277w0819zkh940gohao3].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0q5jkyz0277w0819zkh940gohao3].[tyr:Date and Time:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0q5jkyz0277w0819zkh940gohao3].[ctd:Accident Number:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0q5jkyz0277w0819zkh940gohao3].[ctd:Accident Number:qk]</field>
+                  <field>[federated.0q5jkyz0277w0819zkh940gohao3].[tyr:Date and Time:qk]</field>
+                  <field>[federated.0q5jkyz0277w0819zkh940gohao3].[:Measure Names]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>21027</value>
+                <value>#2020-01-01 00:00:00#</value>
+                <value>&quot;[federated.0q5jkyz0277w0819zkh940gohao3].[ctd:Accident Number:qk]&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0q5jkyz0277w0819zkh940gohao3].[:Measure Names]</field>
+            <field>[federated.0q5jkyz0277w0819zkh940gohao3].[none:Accident Number:ok]</field>
+            <field>[federated.0q5jkyz0277w0819zkh940gohao3].[none:Collision Type Description:nk]</field>
+            <field>[federated.0q5jkyz0277w0819zkh940gohao3].[none:Harmful Code:nk]</field>
+            <field>[federated.0q5jkyz0277w0819zkh940gohao3].[yr:Date and Time:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{91707975-2B47-40AC-8CA3-128C6BA6FE9D}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Annual Fatalities'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.19sx5ix0m64tgr1aywwd618wilvi].[none:Year:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.19sx5ix0m64tgr1aywwd618wilvi].[none:Year:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A9520EA0-8745-4D69-BF8D-E74100C56826}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Fatalities'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.19sx5ix0m64tgr1aywwd618wilvi].[sum:Fatalities in Davidson County:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0q5jkyz0277w0819zkh940gohao3].[none:Accident Number:ok]</field>
+            <field>[federated.19sx5ix0m64tgr1aywwd618wilvi].[:Measure Names]</field>
+            <field>[federated.19sx5ix0m64tgr1aywwd618wilvi].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{842D5EED-0989-46B3-B801-D34427BB8153}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
